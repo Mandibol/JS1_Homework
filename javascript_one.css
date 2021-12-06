@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    }
+
+html body{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+h2{
+    display: block;
+    background-color: darkslategrey;
+    margin: 0;
+    padding: 0.5em;
+    color: white;
+}
+
+h2:hover {
+    cursor: pointer;
+    background-color: darkcyan;
+}
+
+td 
+{
+    border: 1px solid black;
+    text-align: center; 
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+input, select, label{
+    padding: 0.5em;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: large;
+    display: inline-block;
+    resize: none;
+}
+
+input, select{
+    border: 1px solid #ccc;
+}
+#booking input, select, label{
+    width: 100%;
+}
+
+#booking label {
+    text-align: right;
+}
+input[type=submit]{
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: cadetblue;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 0.5em;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+    font-size: large;
+    }
+
+header {
+    grid-area: header;
+    text-align: center;
+    background-color: darkslategrey;
+    color: floralwhite;
+}
+.left {
+    grid-area: left;
+    background-color: cadetblue;
+}
+.right {
+    grid-area: right;
+    background-color: cadetblue;
+}
+article {
+    grid-area: article;
+    padding: 1em;
+}
+footer {
+    grid-area: footer;
+    text-align: center;
+    background-color: darkslategrey;
+    color: floralwhite;
+    padding: 0.5em;
+}
+
+main {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr minmax(400px, 1fr) minmax(400px, 1fr) 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    'header header header header'
+    'left article article right'
+    'footer footer footer footer'
+    ;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-50 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+.col-100 {
+    float: left;
+    width: 100%;
+}
+.animationBox {
+    position: absolute;
+}
+
+/* Väldigt nöjd med hur sidan skalar i bredd, mobil anpassad*/
+@media screen and (max-width: 800px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'header'
+        'article'
+        'footer'
+        ;
+
+        }
+        .col-25, .col-50 {
+            width: 100%;
+            margin-top: 0;
+        }
+
+        #booking label{
+        text-align: left;
+    }
+}

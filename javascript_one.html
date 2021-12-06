@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inlämning 1</title>
+    <link rel="stylesheet" href="javascript_one.css">
+    <script src="javascript_one.js"></script>
+    <script src="jquery-3.6.0.min.js"></script> 
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Individuell Inlämning 1</h1>
+        </header>
+        <div class="left"></div>
+        <article>
+            <h2 id="squareNbrHeader">Uppgift 1: Kvadrattal</h2>
+            <div id="squareNbr"></div>
+
+
+            <h2>Uppgift 2: Multiplikationstabell</h2>
+            <div id="multiTable"></div> 
+
+            <h2>Uppgift 3 & 6: Gissa Numret</h2>
+            <form id="guessNumberForm"> 
+                <label for="guessNumberInput">Gissa ett tall mellan 1 och 100</label><br>
+                <input type="number" id="guessNumberInput" required>
+                <input type="submit" value="Gissa!">
+                <label id="guessNumberOutput">Svar:</label>
+            </form>
+
+            <h2>Uppgift 4: Översätt till rövarspråket</h2>
+            <form id="translateForm" >
+                <label for="translateInput">Skriv Här:</label>
+                <textarea id="translateInput" required></textarea>
+                <label for="translateOutput">Översatt till rövarspråket:</label>
+                <textarea id="translateOutput" readonly></textarea>
+                <input type="submit" value="Översätt"><br><br>
+            </form>          
+
+            <h2>Uppgift 5:</h2>
+
+            <div>
+                <p id="postaladdress"></p>
+                <p id="birthyear"></p>
+                <p id="result"></p>
+                <p id="director"></p>
+            </div>
+
+            <!--något lurt händer här -->
+            <h2>Uppgift 7: Resebokning</h2>
+            <form id="booking">
+                <div class="col-100">
+                    <div class="col-25"><label for="destinationInput">Resmål:</label></div>
+                    <div class="col-50">
+                        <select id="destinationInput" required>
+                            <option value="">Välj Destination</option>
+                            <option value="Köpenhamn">Köpenhamn</option>
+                            <option value="Helsingfors">Helsingfors</option>
+                            <option value="Reykjavik">Reykjavik</option>
+                            <option value="Oslo">Oslo</option>
+                            <option value="Stockholm">Stockholm</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-100">
+                    <div class="col-25"><label for="departureDateInput">Avgångstid:</label></div>
+                    <div class="col-50"><input type="date" id="departureDateInput" required></div>
+                </div>
+
+                <div class="col-100">
+                    <div class="col-25"><label for="returnDateInput">Återkomst:</label></div>
+                    <div class="col-50"><input type="date" id="returnDateInput" required><br><br></div>
+                </div>
+
+                <div class="col-100">
+                    <div class="col-25"><label for="fNameInput">Förnamn:</label></div>
+                    <div class="col-50"><input type="text" id="fNameInput" placeholder="Förnamn" required></div>
+                </div>
+
+                <div class="col-100">
+                    <div class="col-25"><label for="sNameInput">Efternamn:</label></div>
+                    <div class="col-50"><input type="text" id="sNameInput" required></div>
+                </div>
+
+                <div class="col-100">
+                    <div class="col-25"><label for="addressInput">Adress:</label></div>
+                    <div class="col-50"><input type="text" id="addressInput" required></div>
+                </div>
+
+                <div class="col-100">
+                    <div class="col-25"><label for="postcodeInput">Postnummer:</label></div>
+                    <div class="col-50"><input type="text" id="postcodeInput" required></div>
+                </div>
+
+                <div class="col-100">
+                    <div class="col-25"><label for="cityInput">Ort:</label></div>
+                    <div class="col-50"><input type="text" id="cityInput" required><br><br></div>
+                </div>
+
+                <div class="col-100">
+                    <div class="col-25"><label for="emailInput">Mejladress:</label></div>
+                    <div class="col-50"><input type="email" id="emailInput" required></div>
+                </div>
+
+                <div class="col-100">
+                    <div class="col-25"><label for="pswInput">Skapa lösenord:</label></div>
+                    <div class="col-50"><input type="password" id="pswInput" required><br><br></div>
+                </div>
+
+                <div class="col-100">
+                    <div class="col-25"></div>
+                    <div class="col-50"><input type="submit" value="Boka"></div>  
+                </div>              
+            </form>
+        </article>
+        <div class="right"></div>
+        <Footer>Alexander Wallberg</Footer>
+    </main>
+
+</body>
+
+</html>
